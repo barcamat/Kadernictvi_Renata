@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="conteiner">
+        <header>
+            <div class="header_up-line">
+                <a href="/" alt="Home page"><img class="header_logo-salon" src="/images/header/logo_salonu.png" alt="Logo salonu"></a> 
+
+                <div class="logo_social-sites">
+                    <a href="https://www.facebook.com/"><img class="logo_fb" src="/images/header/logo_fb.png" alt="Logo Facebook"></a>
+                    <a href="https://www.instagram.com/"><img class="logo_inst" src="/images/header/logo_insta.png" alt="Logo Instagram"></a>
+                    <a href="gmail.com"><img class="logo_mail" src="/images/header/logo_mail.png"></a>
+                </div>
+            </div>
+
+            <nav class="header_navigation">
+                <a href="/o_mne/" class="nav_item">O mně</a>
+                <a href="/sluzby/" class="nav_item">Služby</a>
+                <a href="/cenik/" class="nav_item">Ceník</a>
+                <a href="#" class="nav_item">...Více</a>
+                <!-- <img class="nav_hamburger" src="images/header/hamburgerMenu.png" alt="menu_ham"> -->
+            </nav>
+
+            <img  class="header_img-hair" src="/images/header/header_img.jpg" alt="zdroj:pixabay.com, Engin_Akyurt">
+
+        </header>
+
+        <main>
+
+            {{content | safe}}
+
+         </main>
+
+        <footer>
+            <section class="footer_violet-section">
+                <div class="footer_adress">
+                    <p class="footer_adress_headline">Kde mě najdete</p>
+                    <p class="footer-item">Vlasové studio Renata</p>
+                    <p class="footer-item">Dlouhý vlas 230</p>
+                    <p class="footer-item">Křižánky 563 93</p>
+                </div>
+
+                <div class="footer_time-of-ordering">
+                    <p class="footer_adress_headline">Otevírací doba, telefon</p>
+                    <p class="footer-item">Po - Pá 9:00-18:00</p>
+                    <p class="footer-item">Čas objednání dle dohody</p>
+                    <p class="footer-item">tel. 736 662 113</p>
+                </div>
+            </section>
+
+            <section class="footer_black-section">
+                <p class="footer-item">©2023, Barbora Maťátková</p>
+            </section>
+
+        </footer>
+    </div>
+</body>
+</html>     

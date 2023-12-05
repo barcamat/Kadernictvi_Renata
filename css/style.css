@@ -1,0 +1,213 @@
+@charset "UTF-8";
+html {
+  box-sizing: border-box;
+}
+
+*, ::before, ::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  margin: 0;
+  background-color: #ececec;
+}
+
+.conteiner {
+  width: 480px;
+  margin: 0 auto;
+}
+
+/********************************************************ŠABLONA****************************************************************/
+/**************===HEADER UP===**************/
+.header_up-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.header_logo-salon {
+  width: 160px;
+  height: 35px;
+}
+
+.logo_fb,
+.logo_inst,
+.logo_mail {
+  width: 20px;
+  height: 20px;
+  margin: 10px 0px 0 8px;
+}
+
+.logo_social-sites {
+  margin-right: 10px;
+}
+
+/****************===HEADER NAVIGATION===***********/
+.header_navigation {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  background-color: rgb(101, 27, 71);
+}
+
+.nav_item {
+  padding: 4px 15px;
+  color: #ececec;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.nav_item:hover {
+  background-color: #000000;
+  text-decoration: none;
+  padding: 4px 15px;
+}
+
+.nav_hamburger {
+  height: 20px;
+  margin: 5px;
+}
+
+/*************===HEADER IMAGE===**************/
+.header_img-hair {
+  max-width: 480px;
+}
+
+/*************===FOOTER - SECTION VIOLET===*************/
+.footer_violet-section {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(101, 27, 71);
+  color: #ececec;
+  padding-bottom: 10px;
+}
+
+.footer_adress_headline {
+  font-size: 12px;
+  text-decoration: underline;
+  text-transform: uppercase;
+  margin: 12px 0 0 0;
+}
+
+.footer-item {
+  font-size: 10px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/**************===FOOTER - BLACK SECTION===**************/
+.footer_black-section {
+  background-color: black;
+  padding: 10px 0px;
+  text-align: center;
+  color: #ececec;
+  font-size: 10px;
+}
+
+/*****************************************************COMMON ITEMS FOR ALL HTMLS*******************************************/
+/*******************===SECTIONS COMMON SETTINGS===***************/
+.sections_headline {
+  font-size: 15px;
+  font-family: "Montserrat", Arial;
+  text-align: center;
+  text-decoration: underline;
+  color: rgb(101, 27, 71);
+  margin: 0;
+}
+
+.section-box {
+  padding: 10px 30px;
+}
+
+.section_paragraf {
+  font-size: 12px;
+  margin-bottom: 30px;
+}
+
+/****************************************************************HOME PAGE**************************************************************/
+.home-page_welcome {
+  text-align: center;
+  font-size: 15px;
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+
+.home-page_order {
+  text-align: center;
+  padding-top: 20px;
+  margin: 0;
+}
+
+.home-page_order::after {
+  content: "";
+  display: block;
+  width: 480px;
+  height: 1px;
+  background-color: rgb(101, 27, 71);
+  margin: 30px 0;
+}
+
+.home-page_order-headline {
+  font-size: 12px;
+  margin: 0;
+}
+
+.home-page_order_paragraf {
+  font-size: 14px;
+  color: rgb(101, 27, 71);
+  font-weight: bold;
+}
+
+/****************HOME PAGE - SERVICES IMAGES**********************/
+.home-page_services_gallery {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-top: 20px;
+}
+
+.home-page_services_img {
+  width: 240px;
+  height: 160px;
+}
+
+.home-page_services_paragraf {
+  position: absolute;
+}
+
+/****************************************************************SECTION O MNĚ**************************************************************/
+.o_mne-paragraf {
+  text-align: justify;
+}
+
+.o_mne-paragraf-welcome {
+  text-align: center;
+}
+
+/****************************************************************SECTION CENÍK**************************************************************/
+.cenik-box {
+  padding: 10px 30px;
+  box-shadow: 0 0.5rem 1.5625rem rgba(0, 0, 0, 0.1019607843);
+  margin: 15px 0;
+}
+
+.cenik_flex {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1019607843);
+}
+
+.cenik_type-of-service {
+  color: rgb(101, 27, 71);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1019607843);
+  font-weight: bold;
+  margin: 15px 0 10px 0;
+  padding-bottom: 2px;
+}
+
+.cenik_type-of-hair-price {
+  margin: 5px 0;
+}/*# sourceMappingURL=style.css.map */
