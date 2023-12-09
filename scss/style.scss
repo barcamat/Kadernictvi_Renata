@@ -78,7 +78,7 @@ body {
 }
 
 .nav_item:hover,
-.nav_item:active  {
+.nav_item:active {
     background-color: $color-headline;
     text-decoration: none;
     padding: 7px 15px;
@@ -289,18 +289,15 @@ body {
 /***************************************************************************************************************
                                             ===SECTION GALLERY===
 ****************************************************************************************************************/
-.gallery_hair-salon {
+.gallery_hair-salon,
+.gallery_my-work {
     display: grid;
-    grid-template-columns: 32% 32% 32%;
-    margin-bottom: 20px;
+    grid-template-columns: 33% 33% 33%;
 }
 .gallery_img {
     width: 100px;
     margin: 10px;
 }
 .gallery_my-work {
-    display: grid;
-    grid-template-columns: 32% 32% 32%;
     height: 260px;
-    margin-bottom: 20px;
 }

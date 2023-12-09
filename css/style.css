@@ -294,10 +294,10 @@ body {
 /***************************************************************************************************************
                                             ===SECTION GALLERY===
 ****************************************************************************************************************/
-.gallery_hair-salon {
+.gallery_hair-salon,
+.gallery_my-work {
   display: grid;
-  grid-template-columns: 32% 32% 32%;
-  margin-bottom: 20px;
+  grid-template-columns: 33% 33% 33%;
 }
 
 .gallery_img {
@@ -306,8 +306,5 @@ body {
 }
 
 .gallery_my-work {
-  display: grid;
-  grid-template-columns: 32% 32% 32%;
   height: 260px;
-  margin-bottom: 20px;
 }/*# sourceMappingURL=style.css.map */
