@@ -48,7 +48,7 @@ body {
 .header_logo-salon {
     width: 90px;
     height: 30px;
-    margin-top: 10px;
+    margin: 10px 0 0 10px;
 }
 
 .logo_fb,
@@ -172,7 +172,7 @@ body {
 /****************HOME PAGE - SERVICES IMAGES**********************/
 .home-page_services_gallery {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 49% 49%;
     margin: 20px 0 10px 0;
     gap:5px;
 }
@@ -288,9 +288,11 @@ body {
 .gallery_my-work {
     display: grid;
     grid-template-columns: 33% 33% 33%;
+    align-items: center;
 }
 .gallery_img {
     width: 100px;
+    margin: 0 auto;
 }
 .gallery_my-work {
     height: 260px;
