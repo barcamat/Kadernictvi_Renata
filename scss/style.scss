@@ -1,4 +1,3 @@
-@use 'tablet-version';
 
 // Proměnné - písmo
 $font-headline: Serif;
@@ -83,10 +82,7 @@ body {
     text-decoration: none;
     padding: 6px 15px;
 }
-.nav_hamburger {
-    height: 20px;
-    margin: 5px;
-}
+
 /*************===HEADER IMAGE===**************/
 .header_img-hair{
     max-width:450px;
@@ -145,14 +141,8 @@ body {
  }
 
 /******************************************************************************************************************************
-                                                   === HOME PAGE ===
+                                                   === HOME PAGE ORDER===
 /******************************************************************************************************************************/
-.home-page_welcome{
-    text-align: center;
-    font-size: 15px;
-    text-decoration: underline;
-    margin-bottom: 10px;
-}
 .home-page_order {
     text-align: center;
     padding-top: 20px;
@@ -161,7 +151,7 @@ body {
 .home-page_order::after{
     content:"";
     display: block;
-    width: 480px;
+    width: 450px;
     height: 1px;
     background-color:$fialova;
     margin: 30px 0;
@@ -214,7 +204,7 @@ body {
     margin: 110px 0 0 0;
 }
 /************************************************************************************************************* 
-                                        ===SECTION O MNĚ ===
+                                        ===SECTION ABOUT ME ===
  ************************************************************************************************************/
 .o_mne-paragraf {
     text-align: justify;
@@ -222,55 +212,6 @@ body {
 .o_mne-paragraf-welcome {
     text-align: center;
 }
-/********************************************************************************************************************
-                                         ===SECTION CENÍK===
-*********************************************************************************************************************/
-.cenik-box {
-    padding: 10px 30px;
-    box-shadow:  0 .5rem 1.5625rem $color-grey-cenik;
-    margin: 15px 0;
-}
-.cenik_flex {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid $color-grey-cenik;
- }
-.cenik_type-of-service {
-    color:$fialova;
-    border-bottom: 1px solid $color-grey-cenik;
-    font-weight: bold;
-    margin: 15px 0 10px 0;
-    padding-bottom: 2px;
-}
-.cenik_type-of-hair-price {
-    margin:5px 0;
-}
-
-/****************************************************************************************************************
-                                             ===SECTION CONTACT===
-*****************************************************************************************************************/
-.contact-flex {
-    display: flex;
-    flex: 0 0 100%;
-    justify-content: space-around;
-    margin: 25px 0;
-}
-.contact_adress-phone {
-    margin:0;
-    font-size: 12px;
-}
-.contact_headline-adress-phone {
-    text-decoration: underline;
-    margin-bottom: 10px;
-}
-
-/***************************************************************************************************************
-                                            ===SECTION GALERRY===
-****************************************************************************************************************/
-.gallery-headline {
-    font-size: 15px;
-}
-
 /***************************************************************************************************************
                                             ===SECTION SERVICES===
 ****************************************************************************************************************/
@@ -305,9 +246,38 @@ body {
     padding: 0 5px;
     text-align: center;
 }
+/********************************************************************************************************************
+                                         ===SECTION PRICELIST===
+*********************************************************************************************************************/
+.cenik-box {
+    padding: 10px 30px;
+    box-shadow:  0 .5rem 1.5625rem $color-grey-cenik;
+    margin: 15px 0;
+}
+.cenik_flex {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid $color-grey-cenik;
+ }
+.cenik_type-of-service {
+    color:$fialova;
+    border-bottom: 1px solid $color-grey-cenik;
+    font-weight: bold;
+    margin: 15px 0 10px 0;
+    padding-bottom: 2px;
+}
+.cenik_type-of-hair-price {
+    margin:5px 0;
+}
+
+
 /***************************************************************************************************************
-                                            ===SECTION GALLERY===
+                                            ===SECTION GALERRY===
 ****************************************************************************************************************/
+.gallery-headline {
+    font-size: 15px;
+}
+
 .gallery-headline {
     background-color: $fialova;
     color:$color-light;
@@ -327,4 +297,133 @@ body {
 }
 .gallery_my-work {
     height: 260px;
+}
+/****************************************************************************************************************
+                                             ===SECTION CONTACT===
+*****************************************************************************************************************/
+.contact-flex {
+    display: flex;
+    flex: 0 0 100%;
+    justify-content: space-around;
+    margin: 25px 0;
+}
+.contact_adress-phone {
+    margin:0;
+    font-size: 12px;
+}
+.contact_headline-adress-phone {
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+/***************************************************************************************************************
+                                            ===MEDIA QUERY===
+****************************************************************************************************************/
+
+
+/****************************************************WIDTH MIN 768px*****************************************/
+@media screen and (min-width:768px){
+    .conteiner {
+        width: 768px;
+    }
+    /****************===HEADER FB, INST, MAIL===***********/
+    .logo_fb,
+    .logo_inst,
+    .logo_mail {
+    width: 25px;
+    height: 25px;
+    margin: 10px 0px 0 8px;
+    }
+    /*******************===HEADER NAVIGATION===**************/
+    .header_navigation {
+        justify-content:right;
+    }
+    .nav_item {
+        font-size: 16px;
+    }
+    /********************===HEADER IMAGE===*********************/
+    .header_img-hair{
+    max-width:768px;
+    }
+    /*************===COMMON ITEMS FOR ALL SECTIONS===**************/
+    .sections_headline {
+        font-size: 16px;
+    }
+    /*********************===HOME PAGE ORDER===**********************/
+    .home-page_order-headline{
+        font-size: 14px;
+    }
+    .home-page_order_paragraf {
+        font-size: 16px;
+    }
+    .home-page_order::after{
+        width: 768px;
+    }
+    /*************HOME PAGE - SERVICES IMAGES*******************/
+    .home-page_services_gallery {
+        grid-template-columns: 33% 33% 33%;
+        gap: 3px;
+    }
+    /****************===SECTION SERVICES===**********************/
+    .services_images_flex {
+        width:760px;
+    }
+    .services_description-box {
+        flex: 0 0 33.3%;
+    }
+    /****************===PRICELIST===**********************/
+    .cenik-box {
+        margin: 15px auto;
+        width: 500px;
+    }
+    /****************===GALLERY===**********************/
+    .gallery-headline {
+        font-size: 16px;
+    }
+    .gallery_hair-salon,
+    .gallery_my-work {
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+    .gallery_img {
+        width: 150px;
+    }
+       /****************===GALLERY===**********************/
+    .map {
+        display: block;
+        margin:0 auto;
+        width:510px;
+    }
+}
+/****************************************************WIDTH MIN 960px*****************************************/
+@media screen and (min-width:960px) {
+    .conteiner {
+        width: 960px;
+    }
+    /********************===HEADER IMAGE===*********************/
+     .header_img-hair{
+        max-width:960px;
+    }
+    /********************===HOME PAGE===*********************/
+    .home-page_order::after{
+        width: 960px;
+    }
+    .home-page_services_gallery {
+        width:800px;
+        margin:25px auto;
+    }
+    .section_o-mne {
+        margin:0 auto;
+        width: 750px;
+    }
+   /********************===HOME PAGE===*********************/
+    .contact-flex {
+        justify-content: space-around;
+        width:700px;
+        margin:25px auto;
+    }
+    /****************===GALLERY===**********************/
+    .map {
+
+        width:700px;
+    }
 }
