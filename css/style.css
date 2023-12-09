@@ -68,7 +68,7 @@ body {
 .nav_item:active {
   background-color: #000000;
   text-decoration: none;
-  padding: 7px 15px;
+  padding: 6px 15px;
 }
 
 .nav_hamburger {
@@ -174,9 +174,7 @@ body {
 .home-page_services_gallery {
   display: grid;
   grid-template-columns: 50% 50%;
-  margin-top: 20px;
-  width: 450px;
-  height: 350px;
+  margin: 20px 0 10px 0;
 }
 
 .home-page_services_bg-image {
@@ -205,28 +203,14 @@ body {
   background-image: url(/images/sluzby/prodluzovani.jpg);
 }
 
-.home-page_services_img {
-  width: 225px;
-  height: 160px;
-}
-
 .home-page_services_paragraf {
-  position: absolute;
-  font-size: 14px;
+  position: relative;
+  font-size: 12px;
   font-weight: bold;
   color: #ececec;
   background-color: rgb(101, 27, 71);
   padding: 3px 6px;
-}
-
-.home-page_services_paragraf-1 {
-  top: 522px;
-  left: 209px;
-}
-
-.home-page_services_paragraf-2 {
-  top: 522px;
-  left: 434.5px;
+  margin: 110px 0 0 0;
 }
 
 /************************************************************************************************************* 
@@ -336,6 +320,14 @@ body {
 /***************************************************************************************************************
                                             ===SECTION GALLERY===
 ****************************************************************************************************************/
+.gallery-headline {
+  background-color: rgb(101, 27, 71);
+  color: #ececec;
+  padding: 0;
+  text-align: center;
+  font-size: 14px;
+}
+
 .gallery_hair-salon,
 .gallery_my-work {
   display: grid;
