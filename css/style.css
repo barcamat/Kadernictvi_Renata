@@ -32,8 +32,9 @@ body {
 }
 
 .header_logo-salon {
-  width: 160px;
-  height: 35px;
+  width: 90px;
+  height: 30px;
+  margin-top: 10px;
 }
 
 .logo_fb,
@@ -283,15 +284,11 @@ body {
                                             ===SECTION GALERRY===
 ****************************************************************************************************************/
 .gallery-headline {
-  font-size: 15px;
-}
-
-.gallery-headline {
   background-color: rgb(101, 27, 71);
   color: #ececec;
   padding: 0;
   text-align: center;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .gallery_hair-salon,
@@ -302,11 +299,11 @@ body {
 
 .gallery_img {
   width: 100px;
-  margin: 10px;
 }
 
 .gallery_my-work {
   height: 260px;
+  margin-bottom: 15px;
 }
 
 /****************************************************************************************************************
