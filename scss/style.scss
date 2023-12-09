@@ -1,3 +1,4 @@
+@use 'cenik';
 
 // Proměnné - písmo
 $font-headline: Serif;
@@ -246,35 +247,13 @@ body {
     margin:10px 0;
     text-align: center;
     text-decoration: underline;
+    font-weight: 700;
 }
 .services_description-paragraph {
     font-size: 12px;
     margin:0 0 10px 0;
     padding: 0 5px;
     text-align: center;
-}
-/********************************************************************************************************************
-                                         ===SECTION PRICELIST===
-*********************************************************************************************************************/
-.cenik-box {
-    padding: 10px 30px;
-    box-shadow:  0 .5rem 1.5625rem $color-grey-cenik;
-    margin: 15px 0;
-}
-.cenik_flex {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid $color-grey-cenik;
- }
-.cenik_type-of-service {
-    color:$fialova;
-    border-bottom: 1px solid $color-grey-cenik;
-    font-weight: bold;
-    margin: 15px 0 10px 0;
-    padding-bottom: 2px;
-}
-.cenik_type-of-hair-price {
-    margin:5px 0;
 }
 
 
@@ -294,11 +273,12 @@ body {
     display: grid;
     grid-template-columns: 33% 33% 33%;
     align-items: center;
+    gap:3px;
 }
 .gallery_img {
-    width: 100px;
+    width: 120px;
     margin: 0 auto;
-    box-shadow: 2px 2px 10px 1px $color-shadow;
+    box-shadow: 2px 1px 10px 1px $color-shadow;
 }
 .gallery_my-work {
     height: 260px;
@@ -391,7 +371,7 @@ body {
         grid-template-columns: 25% 25% 25% 25%;
     }
     .gallery_img {
-        width: 150px;
+        width: 180px;
     }
        /****************===GALLERY===**********************/
     .map {
