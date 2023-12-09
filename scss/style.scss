@@ -50,7 +50,10 @@ body {
     height: 30px;
     margin: 10px 0 0 10px;
 }
-
+.header_house-icon {
+    width:25px;
+    margin: 10px 0 0 10px;
+}
 .logo_fb,
 .logo_inst,
 .logo_mail {
@@ -83,7 +86,9 @@ body {
     text-decoration: none;
     padding: 5px 15px;
 }
-
+.hamburger-menu {
+    display: none;
+}
 /*************===HEADER IMAGE===**************/
 .header_img-hair{
     max-width:450px;
@@ -293,6 +298,7 @@ body {
 .gallery_img {
     width: 100px;
     margin: 0 auto;
+    box-shadow: 2px 2px 10px 1px $color-shadow;
 }
 .gallery_my-work {
     height: 260px;
@@ -411,22 +417,44 @@ body {
         width:800px;
         margin:25px auto;
     }
+    /********************===SECTIONS COMMON ITEMS===*********************/
+    .sections_headline {
+        font-size: 20px;
+    }
+    .section_paragraf {
+        font-size: 14px;
+    }
+    /********************===SECTION O MNE===*********************/
     .section_o-mne {
         margin:0 auto;
         width: 750px;
     }
-   /********************===HOME PAGE===*********************/
+    .o_mne-paragraf {
+        font-size: 14px;
+    }
+    /****************===SECTION SERVICES===**********************/
+    .services_description-headline {
+        font-size: 16px;
+    }
+    .services_description-paragraph {
+        font-size: 14px;
+    }
+    /********************===SECTION CENÍK===*********************/
+    .cenik-box {
+        width: 700px;
+    }
+
+    /****************===GALLERY===**********************/
+    .map {
+        width:700px;
+    }
+    /********************===SECTION CONTACT===*********************/
     .contact-flex {
         justify-content: space-around;
         width:700px;
         margin:25px auto;
     }
-    /********************===HOME PAGE===*********************/
-    .cenik-box {
-        width: 700px;
-    }
-    /****************===GALLERY===**********************/
-    .map {
-        width:700px;
+    .contact_adress-phone {
+        font-size: 16px;
     }
 }
