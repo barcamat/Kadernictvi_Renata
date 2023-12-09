@@ -80,7 +80,7 @@ body {
 .nav_item:active {
     background-color: $color-headline;
     text-decoration: none;
-    padding: 6px 15px;
+    padding: 5px 15px;
 }
 
 /*************===HEADER IMAGE===**************/
@@ -173,6 +173,7 @@ body {
     display: grid;
     grid-template-columns: 50% 50%;
     margin: 20px 0 10px 0;
+    gap:5px;
 }
 .home-page_services_bg-image {
     background-repeat: no-repeat;
@@ -421,9 +422,12 @@ body {
         width:700px;
         margin:25px auto;
     }
+    /********************===HOME PAGE===*********************/
+    .cenik-box {
+        width: 700px;
+    }
     /****************===GALLERY===**********************/
     .map {
-
         width:700px;
     }
 }
