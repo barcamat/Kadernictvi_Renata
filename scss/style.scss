@@ -303,10 +303,6 @@ body {
     margin: 0 auto;
     box-shadow: 2px 1px 10px 1px $color-shadow;
 }
-.gallery_my-work {
-    height: 260px;
-    margin-bottom: 15px;
-}
 /****************************************************************************************************************
                                              ===SECTION CONTACT===
 *****************************************************************************************************************/
@@ -323,6 +319,7 @@ body {
 .contact_headline-adress-phone {
     text-decoration: underline;
     margin-bottom: 10px;
+    font-weight: 700;
 }
 
 /***************************************************************************************************************
@@ -402,8 +399,9 @@ body {
        /****************===GALLERY===**********************/
     .map {
         display: block;
-        margin:0 auto;
+        margin:0 auto 10px auto;
         width:510px;
+        height: 250px;
     }
 }
 /****************************************************WIDTH MIN 960px*****************************************/
@@ -445,12 +443,12 @@ body {
     .services_description-paragraph {
         font-size: 14px;
     }
-    /********************===SECTION CENÍK===*********************/
+    /********************===SECTION PRICELIST===*********************/
     .cenik-box {
         width: 700px;
     }
 
-    /****************===GALLERY===**********************/
+    /****************===SECTION GALLERY===**********************/
     .gallery_img {
         width:180px;
         margin: 0 auto;
@@ -459,12 +457,27 @@ body {
         width:700px;
     }
     /********************===SECTION CONTACT===*********************/
+    .contact_adress-phone-map_flex{
+        display: flex;
+        margin: 30px 20px;
+    }
     .contact-flex {
-        justify-content: space-around;
-        width:700px;
+        flex-direction: column;
+        flex: 0 0 40%;
         margin:25px auto;
+        padding-left: 30px;
+    }
+    .contact-adress {
+        margin-bottom: 20px;
     }
     .contact_adress-phone {
         font-size: 16px;
+    }
+    .contact_headline-adress-phone {
+        margin:0;
+    }
+    .map {
+        width: 500px;
+        flex: 0 0 60%;
     }
 }
