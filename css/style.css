@@ -127,7 +127,7 @@ body {
   text-align: center;
   text-decoration: underline;
   color: rgb(101, 27, 71);
-  margin: 0;
+  margin: 10px 0 0 0;
 }
 
 .section-box {
@@ -432,6 +432,10 @@ body {
   /********************===HEADER IMAGE===*********************/
   .header_img-hair {
     max-width: 960px;
+  }
+  /********************===COMMON ITEMS FO SECTIONS===*********************/
+  .sections_headline {
+    margin: 20px 0 0 0;
   }
   /********************===HOME PAGE===*********************/
   .home-page_order::after {
