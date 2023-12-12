@@ -449,6 +449,9 @@ body {
     .nav_item:active {
         padding: 11px 13px;
     }
+    .nav_item:nth-child(5){
+        margin-right: 20px;
+    }
     /********************===COMMON ITEMS FO SECTIONS===*********************/
     .sections_headline {
         margin: 20px 0 0 0;
@@ -498,9 +501,13 @@ body {
         display: block;
         margin: 0 auto;
     }
-    .map {
-        width:700px;
+    .gallery_hair-salon,
+    .gallery_my-work {
+        margin-bottom: 60px;
     }
+   .gallery-headline:nth-child(2) {
+    margin-top: 30px;
+   }
     /********************===SECTION CONTACT===*********************/
     .contact_adress-phone-map_flex{
         display: flex;
@@ -522,7 +529,7 @@ body {
         margin:0;
     }
     .map {
-        width: 500px;
+        width:500px;
         flex: 0 0 60%;
     }
 }
