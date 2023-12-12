@@ -37,16 +37,11 @@ body {
   margin: 10px 0 0 10px;
 }
 
-.header_house-icon {
-  width: 25px;
-  margin: 0 0 5px 10px;
-}
-
 .logo_fb,
 .logo_inst,
 .logo_mail {
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   margin: 10px 0px 0 8px;
 }
 
@@ -57,14 +52,20 @@ body {
 /****************===HEADER NAVIGATION===***********/
 .header_navigation {
   display: flex;
-  justify-content: right;
   align-items: center;
   background-color: rgb(101, 27, 71);
   height: 35px;
+  width: 450px;
+}
+
+.header_house-icon {
+  width: 20px;
+  height: 18px;
+  margin: 8px 5px 0 10px;
 }
 
 .nav_item {
-  padding: 5px 15px;
+  padding: 5px 13px;
   color: #ececec;
   text-decoration: none;
   font-size: 15px;
@@ -74,7 +75,7 @@ body {
 .nav_item:active {
   background-color: #000000;
   text-decoration: none;
-  padding: 5px 15px;
+  padding: 7px 13px;
 }
 
 .hamburger-menu {
@@ -348,22 +349,19 @@ body {
   .logo_fb,
   .logo_inst,
   .logo_mail {
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     margin: 10px 0px 0 8px;
   }
   .header_logo-salon {
-    width: 70px;
-    height: 30px;
-    margin: 10px 0 0 10px;
-  }
-  .header_house-icon {
-    width: 20px;
-    margin: 0px 0 5px 10px;
+    width: 90px;
+    height: 35px;
+    margin: 10px 0 0 0px;
   }
   /*******************===HEADER NAVIGATION===**************/
   .header_navigation {
-    justify-content: right;
+    width: 768px;
+    justify-content: space-between;
   }
   .nav_item {
     font-size: 16px;
@@ -430,8 +428,37 @@ body {
     width: 960px;
   }
   /********************===HEADER IMAGE===*********************/
+  .header_logo-salon {
+    width: 150px;
+    height: 50px;
+    margin: 10px 0 0 0px;
+  }
+  .logo_fb,
+  .logo_inst,
+  .logo_mail {
+    width: 30px;
+    height: 30px;
+    margin: 10px 0px 0 8px;
+  }
   .header_img-hair {
     max-width: 960px;
+  }
+  .header_navigation {
+    width: 960px;
+    height: 50px;
+  }
+  .header_house-icon {
+    width: 25px;
+    height: 23px;
+    margin: 8px 0px 0 15px;
+  }
+  .nav_item {
+    padding: 10px 13px;
+    font-size: 20px;
+  }
+  .nav_item:hover,
+  .nav_item:active {
+    padding: 11px 13px;
   }
   /********************===COMMON ITEMS FO SECTIONS===*********************/
   .sections_headline {
@@ -444,6 +471,10 @@ body {
   .home-page_services_gallery {
     width: 800px;
     margin: 25px auto;
+  }
+  .home-page_services_paragraf {
+    font-size: 14px;
+    text-align: center;
   }
   /********************===SECTIONS COMMON ITEMS===*********************/
   .sections_headline {
