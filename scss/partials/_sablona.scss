@@ -1,0 +1,141 @@
+@use 'variables' as *;
+
+/********************************************************************************************************************
+                                         ===HLAVNI SABLONA===
+*********************************************************************************************************************/
+
+/************===HEADER UP===*************/
+.header_up-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0 0 0;
+
+
+}
+.header_logo-salon {
+    width: 90px;
+    height: 30px;
+    margin: 10px 0 0 10px;
+
+    @media screen and (min-width:960px){
+        width: 150px;
+        height: 50px;
+        margin: 10px 0 0 0px;
+    }
+}
+.logo_fb,
+.logo_inst,
+.logo_mail {
+    width: 25px;
+    height: 25px;
+    margin: 10px 0px 0 8px;
+
+    @media screen and (min-width:960px){
+        width: 30px;
+        height: 30px;
+    }
+}
+.logo_social-sites {
+    margin-right: 10px;
+}
+/****************===HEADER NAVIGATION===***********/
+.header_navigation {
+    display: flex;
+    align-items: center;
+    background-color: $fialova;
+    height: 35px;
+    width: 450px;
+
+    @media screen and (min-width:768px){
+        width: 768px;
+        justify-content: space-between;
+    }
+
+    @media screen and (min-width:960px){
+        width: 960px;
+        height: 50px;
+    }
+}
+.header_house-icon {
+    width:20px;
+    height: 18px;
+    margin:8px 5px 0 10px;
+
+    @media screen and (min-width:960px) {
+        width:25px;
+        height: 23px;
+        margin:8px 0px 0 15px;
+    }
+}
+.nav_item {
+    padding: 5px 13px;
+    color: $color-light;   
+    text-decoration: none;
+    font-size: 15px;
+
+    @media screen and (min-width:768px){
+        font-size: 16px;
+    }
+    @media screen and (min-width:960px) {
+        padding: 10px 13px;
+        font-size: 20px;
+    }
+}
+.nav_item:hover,
+.nav_item:active {
+    background-color: $color-headline;
+    text-decoration: none;
+    padding: 7px 13px;
+
+    @media screen and (min-width:960px){
+        padding: 11px 13px;
+    }
+}
+@media screen and (min-width:960px) {
+    .nav_item:nth-child(5) {
+        margin-right: 20px;
+    }
+}
+.hamburger-menu {
+    display: none;
+}
+/*************===HEADER IMAGE===**************/
+.header_img-hair{
+    max-width:450px;
+
+    @media screen and (min-width:768px){
+        max-width:768px;
+    }
+
+    @media screen and (min-width:960px){
+        max-width:960px;
+    }
+}
+/*************===FOOTER - SECTION VIOLET===*************/
+.footer_violet-section {
+    display: flex;
+    justify-content: space-around;
+    background-color: $fialova;
+    color:$color-light;
+    padding-bottom: 10px;
+}
+.footer_adress_headline {
+    font-size: 12px;
+    text-decoration: underline;
+    text-transform: uppercase;
+    margin: 15px 0 8px 0;
+}
+.footer-item {
+    font-size: 10px;
+    line-height: 1.6;
+    margin:0;
+}
+/**************===FOOTER - BLACK SECTION===**************/
+.footer_black-section {
+    background-color: black;
+    padding:10px 0px;
+    text-align: center;
+    color:$color-light;
+    font-size: 10px;
+}

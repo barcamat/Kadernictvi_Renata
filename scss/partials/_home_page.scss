@@ -1,0 +1,105 @@
+@use 'variables' as *;
+
+/******************************************************************************************************************************
+                                                   === HOME PAGE ORDER===
+/******************************************************************************************************************************/
+.home-page_order {
+    text-align: center;
+    padding-top: 20px;
+    margin: 0;
+}
+.home-page_order::after{
+    content:"";
+    display: block;
+    width: 450px;
+    height: 1px;
+    background-color:$fialova;
+    margin: 30px 0;
+
+    @media screen and (min-width:768px) {
+        width: 768px;
+    }
+
+    @media screen and (min-width:960px){
+        width: 960px;
+    }
+}
+
+.home-page_order-headline{
+    font-size: 12px;
+    margin:0;
+
+    @media screen and (min-width:768px) {
+        font-size: 14px;
+    }
+}
+
+.home-page_order_paragraf {
+    font-size: 14px;
+    color:$fialova;
+    font-weight: bold;
+
+    @media screen and (min-width:768px){  
+        font-size: 16px;
+    }
+}
+
+/****************HOME PAGE - SERVICES IMAGES**********************/
+.home-page_services_gallery {
+    display: grid;
+    grid-template-columns: 49% 49%;
+    margin: 20px 0 40px 0;
+    gap:5px;
+
+    @media screen and (min-width:768px){
+        grid-template-columns: 33% 33% 33%;
+        gap: 5px;
+    }
+
+    @media screen and (min-width:960px){
+        width:800px;
+        margin:25px auto;
+    }
+}
+.home-page_services_bg-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 110px;
+
+    @media screen and (min-width:768px){
+        height: 180px;
+    }
+}
+.home-page_services_bg-image-1 {
+    background-image: url(/images/sluzby/myti_strih.jpg);
+}
+.home-page_services_bg-image-2 {
+    background-image: url(/images/sluzby/barveni_1.jpg);
+}
+.home-page_services_bg-image-3 {
+    background-image: url(/images/sluzby/poskozene_vlasy.jpg);
+}
+.home-page_services_bg-image-4 {
+    background-image: url(/images/sluzby/ucesy_1.jpg);
+}
+.home-page_services_bg-image-5 {
+    background-image: url(/images/sluzby/prodluzovani.jpg);
+}
+.home-page_services_paragraf{
+    position: relative;
+    font-size: 12px;
+    font-weight: bold;
+    color: $color-light;
+    background-color: $fialova;
+    padding: 3px 6px;
+    margin: 110px 0 0 0;
+
+    @media screen and (min-width:768px){
+        margin: 155px 0 0 0;
+    }
+
+    @media screen and (min-width:960px){
+        font-size: 14px;
+        text-align: center;
+    }
+}

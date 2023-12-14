@@ -1,0 +1,37 @@
+@use 'variables' as *;
+
+/******************************************************************************************************************
+                                      === COMMON ITEMS FOR ALL HTMLS ===
+******************************************************************************************************************/
+
+/******===SECTIONS COMMON SETTINGS===*********/
+
+.sections_headline {
+    font-size: 15px;
+    font-family: "Montserrat", Arial;
+    text-align: center;
+    text-decoration: underline;
+    color:$fialova;
+    margin: 10px 0 0 0;
+
+    @media screen and (min-width:768px){
+        font-size: 16px;
+    }
+
+    @media screen and (min-width:960px){
+        margin: 20px 0 0 0;
+        font-size: 20px;
+    }
+}
+
+.section-box{
+    padding: 10px 30px;
+ }
+
+ .section_paragraf {
+    font-size: 12px;
+    // margin-bottom: 30px;
+    @media screen and (min-width:960px){
+        font-size: 14px;
+    }
+ }

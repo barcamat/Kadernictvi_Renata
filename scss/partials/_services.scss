@@ -1,0 +1,54 @@
+@use 'variables' as *;
+
+/***************************************************************************************************************
+                                        ===SECTION SERVICES===
+****************************************************************************************************************/
+.services_images_flex {
+    display: flex;
+    flex-wrap: wrap;
+    width:400px;
+    margin:20px auto;
+    gap: 5px 0px;
+
+    @media screen and (min-width:768px){
+        width:760px;
+    }
+}
+.services_description-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 0 50%;
+    box-shadow: 1px 1px 10px 1px $color-shadow;
+    margin-bottom: 10px;
+    padding:20px 10px 10px 10px;
+
+    @media screen and (min-width:768px) {
+        flex: 0 0 33.3%;
+    }
+}
+.services_image {
+    width:180px;
+    height: 130px;
+}
+.services_description-headline {
+    font-size: 14px;
+    margin:10px 0;
+    text-align: center;
+    text-decoration: underline;
+    font-weight: 700;
+
+    @media screen and (min-width:960px){
+        font-size: 16px;
+    }
+}
+.services_description-paragraph {
+    font-size: 12px;
+    margin:0 0 10px 0;
+    padding: 0 5px;
+    text-align: center;
+
+    @media screen and (min-width:960px){
+        font-size: 14px;
+    }
+}

@@ -1,29 +1,46 @@
 @charset "UTF-8";
-html {
-  box-sizing: border-box;
+/********************************************************************************************************************
+                                         ===SECTION PRICELIST===
+*********************************************************************************************************************/
+.cenik-box {
+  padding: 10px 30px;
+  box-shadow: 0 0.5rem 1.5625rem rgba(0, 0, 0, 0.1019607843);
+  margin: 15px auto;
+}
+@media screen and (min-width: 768px) {
+  .cenik-box {
+    margin: 15px auto;
+    width: 500px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .cenik-box {
+    width: 700px;
+  }
 }
 
-*, ::before, ::after {
-  box-sizing: inherit;
+.cenik_flex {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1019607843);
 }
 
-body {
-  font-family: "Open Sans", sans-serif;
-  font-size: 20px;
-  line-height: 1.5;
-  margin: 0;
-  background-color: #ececec;
+.cenik_type-of-service {
+  color: rgb(101, 27, 71);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1019607843);
+  font-weight: bold;
+  margin: 15px 0 10px 0;
+  padding-bottom: 2px;
 }
 
-/**********************************ŠÍŘKA BOXU 450PX - MOBIL***********************************************************/
-.conteiner {
-  width: 450px;
-  margin: 0 auto;
+.cenik_type-of-hair-price {
+  margin: 5px 0;
 }
 
-/************************************************************************************************************************
-                                              === ŠABLONA ===
-/************************************************************************************************************************/
+/********************************************************************************************************************
+                                         ===HLAVNI SABLONA===
+*********************************************************************************************************************/
+/************===HEADER UP===*************/
 .header_up-line {
   display: flex;
   justify-content: space-between;
@@ -36,6 +53,13 @@ body {
   height: 30px;
   margin: 10px 0 0 10px;
 }
+@media screen and (min-width: 960px) {
+  .header_logo-salon {
+    width: 150px;
+    height: 50px;
+    margin: 10px 0 0 0px;
+  }
+}
 
 .logo_fb,
 .logo_inst,
@@ -43,6 +67,14 @@ body {
   width: 25px;
   height: 25px;
   margin: 10px 0px 0 8px;
+}
+@media screen and (min-width: 960px) {
+  .logo_fb,
+  .logo_inst,
+  .logo_mail {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 .logo_social-sites {
@@ -57,6 +89,12 @@ body {
   height: 35px;
   width: 450px;
 }
+@media screen and (min-width: 768px) {
+  .header_navigation {
+    width: 768px;
+    justify-content: space-between;
+  }
+}
 
 .header_house-icon {
   width: 20px;
@@ -69,6 +107,11 @@ body {
   color: #ececec;
   text-decoration: none;
   font-size: 15px;
+}
+@media screen and (min-width: 768px) {
+  .nav_item {
+    font-size: 16px;
+  }
 }
 
 .nav_item:hover,
@@ -85,6 +128,11 @@ body {
 /*************===HEADER IMAGE===**************/
 .header_img-hair {
   max-width: 450px;
+}
+@media screen and (min-width: 768px) {
+  .header_img-hair {
+    max-width: 768px;
+  }
 }
 
 /*************===FOOTER - SECTION VIOLET===*************/
@@ -118,6 +166,28 @@ body {
   font-size: 10px;
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*, ::before, ::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  margin: 0;
+  background-color: #ececec;
+}
+
+/**********************************ŠÍŘKA BOXU 450PX - MOBIL***********************************************************/
+.conteiner {
+  width: 450px;
+  margin: 0 auto;
+}
+
 /******************************************************************************************************************
                                       === COMMON ITEMS FOR ALL HTMLS ===
 ******************************************************************************************************************/
@@ -137,7 +207,6 @@ body {
 
 .section_paragraf {
   font-size: 12px;
-  margin-bottom: 30px;
 }
 
 /******************************************************************************************************************************
@@ -173,14 +242,14 @@ body {
 .home-page_services_gallery {
   display: grid;
   grid-template-columns: 49% 49%;
-  margin: 20px 0 10px 0;
+  margin: 20px 0 40px 0;
   gap: 5px;
 }
 
 .home-page_services_bg-image {
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: fixed;
+  height: 110px;
 }
 
 .home-page_services_bg-image-1 {
@@ -231,7 +300,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   width: 400px;
-  margin: 0 auto;
+  margin: 20px auto;
+  gap: 5px 0px;
 }
 
 .services_description-box {
@@ -241,7 +311,7 @@ body {
   flex: 0 0 50%;
   box-shadow: 1px 1px 10px 1px #d2d2d2;
   margin-bottom: 10px;
-  padding: 10px;
+  padding: 20px 10px 10px 10px;
 }
 
 .services_image {
@@ -318,31 +388,6 @@ body {
   .conteiner {
     width: 768px;
   }
-  /****************===HEADER FB, INST, MAIL===***********/
-  .logo_fb,
-  .logo_inst,
-  .logo_mail {
-    width: 25px;
-    height: 25px;
-    margin: 10px 0px 0 8px;
-  }
-  .header_logo-salon {
-    width: 90px;
-    height: 35px;
-    margin: 10px 0 0 0px;
-  }
-  /*******************===HEADER NAVIGATION===**************/
-  .header_navigation {
-    width: 768px;
-    justify-content: space-between;
-  }
-  .nav_item {
-    font-size: 16px;
-  }
-  /********************===HEADER IMAGE===*********************/
-  .header_img-hair {
-    max-width: 768px;
-  }
   /*************===COMMON ITEMS FOR ALL SECTIONS===**************/
   .sections_headline {
     font-size: 16px;
@@ -360,7 +405,13 @@ body {
   /*************HOME PAGE - SERVICES IMAGES*******************/
   .home-page_services_gallery {
     grid-template-columns: 33% 33% 33%;
-    gap: 3px;
+    gap: 5px;
+  }
+  .home-page_services_bg-image {
+    height: 180px;
+  }
+  .home-page_services_paragraf {
+    margin: 155px 0 0 0;
   }
   /****************===SECTION SERVICES===**********************/
   .services_images_flex {
@@ -368,11 +419,6 @@ body {
   }
   .services_description-box {
     flex: 0 0 33.3%;
-  }
-  /****************===SECTION PRICELIST===**********************/
-  .cenik-box {
-    margin: 15px auto;
-    width: 500px;
   }
   /****************===SECTION GALLERY===**********************/
   .gallery-headline {
@@ -401,18 +447,6 @@ body {
     width: 960px;
   }
   /********************===HEADER IMAGE===*********************/
-  .header_logo-salon {
-    width: 150px;
-    height: 50px;
-    margin: 10px 0 0 0px;
-  }
-  .logo_fb,
-  .logo_inst,
-  .logo_mail {
-    width: 30px;
-    height: 30px;
-    margin: 10px 0px 0 8px;
-  }
   .header_img-hair {
     max-width: 960px;
   }
@@ -473,10 +507,6 @@ body {
   }
   .services_description-paragraph {
     font-size: 14px;
-  }
-  /********************===SECTION PRICELIST===*********************/
-  .cenik-box {
-    width: 700px;
   }
   /****************===SECTION GALLERY===**********************/
   .gallery_img {
