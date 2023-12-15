@@ -86,10 +86,10 @@
 .nav_item:active {
     background-color: $color-headline;
     text-decoration: none;
-    padding: 7px 13px;
+    padding: 9px 13px;
 
     @media screen and (min-width:960px){
-        padding: 11px 13px;
+        padding: 11px 13px 12px 13px;
     }
 }
 @media screen and (min-width:960px) {
@@ -125,11 +125,19 @@
     text-decoration: underline;
     text-transform: uppercase;
     margin: 15px 0 8px 0;
+
+    @media screen and (min-width:960px){
+        font-size: 13px;
+    }
 }
 .footer-item {
     font-size: 10px;
     line-height: 1.6;
     margin:0;
+
+    @media screen and (min-width:960px){
+        font-size: 12px;
+    }
 }
 /**************===FOOTER - BLACK SECTION===**************/
 .footer_black-section {

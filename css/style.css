@@ -1,42 +1,6 @@
 @charset "UTF-8";
-/********************************************************************************************************************
-                                         ===SECTION PRICELIST===
-*********************************************************************************************************************/
-.cenik-box {
-  padding: 10px 30px;
-  box-shadow: 0 0.5rem 1.5625rem rgba(0, 0, 0, 0.1019607843);
-  margin: 15px auto;
-}
-@media screen and (min-width: 768px) {
-  .cenik-box {
-    margin: 15px auto;
-    width: 500px;
-  }
-}
-@media screen and (min-width: 960px) {
-  .cenik-box {
-    width: 700px;
-  }
-}
-
-.cenik_flex {
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1019607843);
-}
-
-.cenik_type-of-service {
-  color: rgb(101, 27, 71);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1019607843);
-  font-weight: bold;
-  margin: 15px 0 10px 0;
-  padding-bottom: 2px;
-}
-
-.cenik_type-of-hair-price {
-  margin: 5px 0;
-}
-
+/*PROMĚNNÉ*/
+/*SABLONA 11TY*/
 /********************************************************************************************************************
                                          ===HLAVNI SABLONA===
 *********************************************************************************************************************/
@@ -95,11 +59,24 @@
     justify-content: space-between;
   }
 }
+@media screen and (min-width: 960px) {
+  .header_navigation {
+    width: 960px;
+    height: 50px;
+  }
+}
 
 .header_house-icon {
   width: 20px;
   height: 18px;
   margin: 8px 5px 0 10px;
+}
+@media screen and (min-width: 960px) {
+  .header_house-icon {
+    width: 25px;
+    height: 23px;
+    margin: 8px 0px 0 15px;
+  }
 }
 
 .nav_item {
@@ -113,14 +90,31 @@
     font-size: 16px;
   }
 }
+@media screen and (min-width: 960px) {
+  .nav_item {
+    padding: 10px 13px;
+    font-size: 20px;
+  }
+}
 
 .nav_item:hover,
 .nav_item:active {
   background-color: #000000;
   text-decoration: none;
-  padding: 7px 13px;
+  padding: 9px 13px;
+}
+@media screen and (min-width: 960px) {
+  .nav_item:hover,
+  .nav_item:active {
+    padding: 11px 13px 12px 13px;
+  }
 }
 
+@media screen and (min-width: 960px) {
+  .nav_item:nth-child(5) {
+    margin-right: 20px;
+  }
+}
 .hamburger-menu {
   display: none;
 }
@@ -132,6 +126,11 @@
 @media screen and (min-width: 768px) {
   .header_img-hair {
     max-width: 768px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .header_img-hair {
+    max-width: 960px;
   }
 }
 
@@ -150,11 +149,21 @@
   text-transform: uppercase;
   margin: 15px 0 8px 0;
 }
+@media screen and (min-width: 960px) {
+  .footer_adress_headline {
+    font-size: 13px;
+  }
+}
 
 .footer-item {
   font-size: 10px;
   line-height: 1.6;
   margin: 0;
+}
+@media screen and (min-width: 960px) {
+  .footer-item {
+    font-size: 12px;
+  }
 }
 
 /**************===FOOTER - BLACK SECTION===**************/
@@ -164,6 +173,44 @@
   text-align: center;
   color: #ececec;
   font-size: 10px;
+}
+
+/*VŠEOBECNÉ NASTAVENÍ*/
+/******************************************************************************************************************
+                                      === COMMON ITEMS FOR ALL HTMLS ===
+******************************************************************************************************************/
+/******===SECTIONS COMMON SETTINGS===*********/
+.sections_headline {
+  font-size: 15px;
+  font-family: "Montserrat", Arial;
+  text-align: center;
+  text-decoration: underline;
+  color: rgb(101, 27, 71);
+  margin: 10px 0 0 0;
+}
+@media screen and (min-width: 768px) {
+  .sections_headline {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .sections_headline {
+    margin: 20px 0 0 0;
+    font-size: 20px;
+  }
+}
+
+.section-box {
+  padding: 10px 30px;
+}
+
+.section_paragraf {
+  font-size: 12px;
+}
+@media screen and (min-width: 960px) {
+  .section_paragraf {
+    font-size: 14px;
+  }
 }
 
 html {
@@ -187,34 +234,23 @@ body {
   width: 450px;
   margin: 0 auto;
 }
-
-/******************************************************************************************************************
-                                      === COMMON ITEMS FOR ALL HTMLS ===
-******************************************************************************************************************/
-/******===SECTIONS COMMON SETTINGS===*********/
-.sections_headline {
-  font-size: 15px;
-  font-family: "Montserrat", Arial;
-  text-align: center;
-  text-decoration: underline;
-  color: rgb(101, 27, 71);
-  margin: 10px 0 0 0;
+@media screen and (min-width: 768px) {
+  .conteiner {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .conteiner {
+    width: 960px;
+  }
 }
 
-.section-box {
-  padding: 10px 30px;
-}
-
-.section_paragraf {
-  font-size: 12px;
-}
-
+/*JEDNOTLIVÉ STRÁNKY*/
 /******************************************************************************************************************************
                                                    === HOME PAGE ORDER===
 /******************************************************************************************************************************/
 .home-page_order {
   text-align: center;
-  padding-top: 20px;
   margin: 0;
 }
 
@@ -224,18 +260,38 @@ body {
   width: 450px;
   height: 1px;
   background-color: rgb(101, 27, 71);
-  margin: 30px 0;
+  margin: 30px auto;
+}
+@media screen and (min-width: 768px) {
+  .home-page_order::after {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .home-page_order::after {
+    width: 800px;
+  }
 }
 
 .home-page_order-headline {
   font-size: 12px;
-  margin: 0;
+  margin: 10px 0 0 0;
+}
+@media screen and (min-width: 768px) {
+  .home-page_order-headline {
+    font-size: 14px;
+  }
 }
 
 .home-page_order_paragraf {
   font-size: 14px;
   color: rgb(101, 27, 71);
   font-weight: bold;
+}
+@media screen and (min-width: 768px) {
+  .home-page_order_paragraf {
+    font-size: 16px;
+  }
 }
 
 /****************HOME PAGE - SERVICES IMAGES**********************/
@@ -245,11 +301,28 @@ body {
   margin: 20px 0 40px 0;
   gap: 5px;
 }
+@media screen and (min-width: 768px) {
+  .home-page_services_gallery {
+    grid-template-columns: 33% 33% 33%;
+    gap: 5px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .home-page_services_gallery {
+    width: 800px;
+    margin: 25px auto;
+  }
+}
 
 .home-page_services_bg-image {
   background-repeat: no-repeat;
   background-size: cover;
-  height: 110px;
+  height: 125px;
+}
+@media screen and (min-width: 768px) {
+  .home-page_services_bg-image {
+    height: 180px;
+  }
 }
 
 .home-page_services_bg-image-1 {
@@ -281,6 +354,17 @@ body {
   padding: 3px 6px;
   margin: 110px 0 0 0;
 }
+@media screen and (min-width: 768px) {
+  .home-page_services_paragraf {
+    margin: 157px 0 0 0;
+  }
+}
+@media screen and (min-width: 960px) {
+  .home-page_services_paragraf {
+    font-size: 14px;
+    text-align: center;
+  }
+}
 
 /************************************************************************************************************* 
                                         ===SECTION ABOUT ME ===
@@ -288,30 +372,57 @@ body {
 .o_mne-paragraf {
   text-align: justify;
 }
+@media screen and (min-width: 960px) {
+  .o_mne-paragraf {
+    font-size: 14px;
+  }
+}
 
 .o_mne-paragraf-welcome {
   text-align: center;
 }
 
+@media screen and (min-width: 960px) {
+  .section_o-mne {
+    margin: 0 auto;
+    width: 750px;
+  }
+}
 /***************************************************************************************************************
-                                            ===SECTION SERVICES===
+                                        ===SECTION SERVICES===
 ****************************************************************************************************************/
 .services_images_flex {
   display: flex;
   flex-wrap: wrap;
-  width: 400px;
-  margin: 20px auto;
+  width: 440px;
+  margin: 0px auto 20px auto;
   gap: 5px 0px;
+}
+@media screen and (min-width: 768px) {
+  .services_images_flex {
+    width: 760px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .services_images_flex {
+    width: 900px;
+  }
 }
 
 .services_description-box {
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex: 0 0 50%;
+  flex: 0 0 47%;
   box-shadow: 1px 1px 10px 1px #d2d2d2;
-  margin-bottom: 10px;
-  padding: 20px 10px 10px 10px;
+  margin: 20px 5px 10px 5px;
+  padding: 10px 15px;
+}
+@media screen and (min-width: 768px) {
+  .services_description-box {
+    flex: 0 0 32%;
+    padding: 10px 20px;
+  }
 }
 
 .services_image {
@@ -326,12 +437,60 @@ body {
   text-decoration: underline;
   font-weight: 700;
 }
+@media screen and (min-width: 960px) {
+  .services_description-headline {
+    font-size: 16px;
+  }
+}
 
 .services_description-paragraph {
   font-size: 12px;
   margin: 0 0 10px 0;
   padding: 0 5px;
   text-align: center;
+}
+@media screen and (min-width: 960px) {
+  .services_description-paragraph {
+    font-size: 14px;
+  }
+}
+
+/********************************************************************************************************************
+                                         ===SECTION PRICELIST===
+*********************************************************************************************************************/
+.cenik-box {
+  padding: 10px 30px;
+  box-shadow: 0 0.5rem 1.5625rem rgba(0, 0, 0, 0.1019607843);
+  margin: 15px auto;
+}
+@media screen and (min-width: 768px) {
+  .cenik-box {
+    margin: 15px auto;
+    width: 500px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .cenik-box {
+    width: 700px;
+  }
+}
+
+.cenik_flex {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1019607843);
+}
+
+.cenik_type-of-service {
+  color: rgb(101, 27, 71);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1019607843);
+  font-weight: bold;
+  margin: 15px 0 10px 0;
+  padding-bottom: 2px;
+}
+
+.cenik_type-of-hair-price {
+  margin: 5px 0;
 }
 
 /***************************************************************************************************************
@@ -344,7 +503,17 @@ body {
   text-align: center;
   font-size: 15px;
 }
+@media screen and (min-width: 768px) {
+  .gallery-headline {
+    font-size: 16px;
+  }
+}
 
+@media screen and (min-width: 960px) {
+  .gallery-headline:nth-child(2) {
+    margin-top: 30px;
+  }
+}
 .gallery_hair-salon,
 .gallery_my-work {
   display: grid;
@@ -352,11 +521,37 @@ body {
   align-items: center;
   gap: 3px;
 }
+@media screen and (min-width: 768px) {
+  .gallery_hair-salon,
+  .gallery_my-work {
+    grid-template-columns: 25% 25% 25% 24%;
+    gap: 2px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .gallery_hair-salon,
+  .gallery_my-work {
+    margin-bottom: 60px;
+  }
+}
 
 .gallery_img {
   width: 120px;
   margin: 0 auto;
   box-shadow: 2px 1px 10px 1px #d2d2d2;
+}
+@media screen and (min-width: 768px) {
+  .gallery_img {
+    width: 165px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 960px) {
+  .gallery_img {
+    width: 180px;
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 /****************************************************************************************************************
@@ -367,6 +562,14 @@ body {
   flex: 0 0 100%;
   justify-content: space-around;
   margin: 25px 0;
+}
+@media screen and (min-width: 960px) {
+  .contact-flex {
+    flex-direction: column;
+    flex: 0 0 40%;
+    margin: 25px auto;
+    padding-left: 30px;
+  }
 }
 
 .contact_adress-phone {
@@ -379,61 +582,13 @@ body {
   margin-bottom: 10px;
   font-weight: 700;
 }
+@media screen and (min-width: 960px) {
+  .contact_headline-adress-phone {
+    margin: 0;
+  }
+}
 
-/***************************************************************************************************************
-                                            ===MEDIA QUERY===
-****************************************************************************************************************/
-/****************************************************WIDTH MIN 768px*****************************************/
 @media screen and (min-width: 768px) {
-  .conteiner {
-    width: 768px;
-  }
-  /*************===COMMON ITEMS FOR ALL SECTIONS===**************/
-  .sections_headline {
-    font-size: 16px;
-  }
-  /*********************===HOME PAGE ORDER===**********************/
-  .home-page_order-headline {
-    font-size: 14px;
-  }
-  .home-page_order_paragraf {
-    font-size: 16px;
-  }
-  .home-page_order::after {
-    width: 768px;
-  }
-  /*************HOME PAGE - SERVICES IMAGES*******************/
-  .home-page_services_gallery {
-    grid-template-columns: 33% 33% 33%;
-    gap: 5px;
-  }
-  .home-page_services_bg-image {
-    height: 180px;
-  }
-  .home-page_services_paragraf {
-    margin: 155px 0 0 0;
-  }
-  /****************===SECTION SERVICES===**********************/
-  .services_images_flex {
-    width: 760px;
-  }
-  .services_description-box {
-    flex: 0 0 33.3%;
-  }
-  /****************===SECTION GALLERY===**********************/
-  .gallery-headline {
-    font-size: 16px;
-  }
-  .gallery_hair-salon,
-  .gallery_my-work {
-    grid-template-columns: 25% 25% 25% 24%;
-    gap: 2px;
-  }
-  .gallery_img {
-    width: 165px;
-    margin: 0 auto;
-  }
-  /****************===GALLERY===**********************/
   .map {
     display: block;
     margin: 0 auto 10px auto;
@@ -441,105 +596,16 @@ body {
     height: 250px;
   }
 }
-/****************************************************WIDTH MIN 960px*****************************************/
 @media screen and (min-width: 960px) {
-  .conteiner {
-    width: 960px;
-  }
-  /********************===HEADER IMAGE===*********************/
-  .header_img-hair {
-    max-width: 960px;
-  }
-  .header_navigation {
-    width: 960px;
-    height: 50px;
-  }
-  .header_house-icon {
-    width: 25px;
-    height: 23px;
-    margin: 8px 0px 0 15px;
-  }
-  .nav_item {
-    padding: 10px 13px;
-    font-size: 20px;
-  }
-  .nav_item:hover,
-  .nav_item:active {
-    padding: 11px 13px;
-  }
-  .nav_item:nth-child(5) {
-    margin-right: 20px;
-  }
-  /********************===COMMON ITEMS FO SECTIONS===*********************/
-  .sections_headline {
-    margin: 20px 0 0 0;
-  }
-  /********************===HOME PAGE===*********************/
-  .home-page_order::after {
-    width: 960px;
-  }
-  .home-page_services_gallery {
-    width: 800px;
-    margin: 25px auto;
-  }
-  .home-page_services_paragraf {
-    font-size: 14px;
-    text-align: center;
-  }
-  /********************===SECTIONS COMMON ITEMS===*********************/
-  .sections_headline {
-    font-size: 20px;
-  }
-  .section_paragraf {
-    font-size: 14px;
-  }
-  /********************===SECTION O MNE===*********************/
-  .section_o-mne {
-    margin: 0 auto;
-    width: 750px;
-  }
-  .o_mne-paragraf {
-    font-size: 14px;
-  }
-  /****************===SECTION SERVICES===**********************/
-  .services_description-headline {
-    font-size: 16px;
-  }
-  .services_description-paragraph {
-    font-size: 14px;
-  }
-  /****************===SECTION GALLERY===**********************/
-  .gallery_img {
-    width: 180px;
-    display: block;
-    margin: 0 auto;
-  }
-  .gallery_hair-salon,
-  .gallery_my-work {
-    margin-bottom: 60px;
-  }
-  .gallery-headline:nth-child(2) {
-    margin-top: 30px;
-  }
-  /********************===SECTION CONTACT===*********************/
   .contact_adress-phone-map_flex {
     display: flex;
     margin: 30px 20px;
-  }
-  .contact-flex {
-    flex-direction: column;
-    flex: 0 0 40%;
-    margin: 25px auto;
-    padding-left: 30px;
   }
   .contact-adress {
     margin-bottom: 20px;
   }
   .contact_adress-phone {
     font-size: 16px;
-  }
-  .contact_headline-adress-phone {
-    margin: 0;
   }
   .map {
     width: 500px;
