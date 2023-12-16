@@ -1,11 +1,9 @@
 @use 'variables' as *;
 
-/******************************************************************************************************************************
-                                                   === HOME PAGE ORDER===
-/******************************************************************************************************************************/
+/*****************************************************************                        === HOME PAGE ORDER===
+/***************************************************************/
 .home-page_order {
     text-align: center;
-    // padding-top: 20px;
     margin: 0;
 }
 .home-page_order::after{
@@ -45,7 +43,8 @@
     }
 }
 
-/****************HOME PAGE - SERVICES IMAGES**********************/
+/*****************************************************************                        === HOME PAGE SERVICES===
+/***************************************************************/
 .home-page_services_gallery {
     display: grid;
     grid-template-columns: 49% 49%;
@@ -54,7 +53,7 @@
 
     @media screen and (min-width:768px){
         grid-template-columns: 33% 33% 33%;
-        gap: 5px;
+        gap: 10px;
     }
 
     @media screen and (min-width:960px){
@@ -93,7 +92,7 @@
     color: $color-light;
     background-color: $fialova;
     padding: 3px 6px;
-    margin: 110px 0 0 0;
+    margin: 101px 0 0 0;
 
     @media screen and (min-width:768px){
         margin: 157px 0 0 0;

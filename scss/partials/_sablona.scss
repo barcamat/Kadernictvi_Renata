@@ -1,8 +1,8 @@
 @use 'variables' as *;
 
-/********************************************************************************************************************
-                                         ===HLAVNI SABLONA===
-*********************************************************************************************************************/
+/*****************************************************************
+                    ===HLAVNI SABLONA===
+************************************************************/
 
 /************===HEADER UP===*************/
 .header_up-line {
@@ -88,6 +88,10 @@
     text-decoration: none;
     padding: 9px 13px;
 
+    @media screen and (min-width:768px){
+        padding: 8px 13px;
+    }
+
     @media screen and (min-width:960px){
         padding: 11px 13px 12px 13px;
     }
@@ -95,6 +99,10 @@
 @media screen and (min-width:960px) {
     .nav_item:nth-child(5) {
         margin-right: 20px;
+
+        :hover {
+            padding-right: 20px;
+        }
     }
 }
 .hamburger-menu {
@@ -142,8 +150,8 @@
 /**************===FOOTER - BLACK SECTION===**************/
 .footer_black-section {
     background-color: black;
-    padding:10px 0px;
+    padding:2px 0px;
     text-align: center;
     color:$color-light;
-    font-size: 10px;
+    font-size: 9px;
 }

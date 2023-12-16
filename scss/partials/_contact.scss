@@ -1,8 +1,9 @@
 @use 'variables' as *; 
 
-/****************************************************************************************************************
-                                             ===SECTION CONTACT===
-*****************************************************************************************************************/
+/*****************************************************************
+                    ===SECTION CONTACT===
+****************************************************************/
+ 
 .contact-flex {
     display: flex;
     flex: 0 0 100%;
@@ -30,15 +31,6 @@
     }
 }
 
-@media screen and (min-width:768px) {
-    .map {
-        display: block;
-        margin:0 auto 10px auto;
-        width:510px;
-        height: 250px;
-    }
-}
-
 @media screen and (min-width:960px) {
     .contact_adress-phone-map_flex{
         display: flex;
@@ -50,8 +42,20 @@
     .contact_adress-phone {
         font-size: 16px;
     }
+}
+
+@media screen and (min-width:768px) {
+    .map {
+        display: block;
+        margin:0 auto 10px auto;
+        width:510px;
+        height: 250px;
+    }
+}
+@media screen and (min-width:960px) {
     .map {
         width:500px;
         flex: 0 0 60%;
     }
 }
+
