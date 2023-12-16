@@ -20,3 +20,37 @@
         width: 750px;
     }
 }
+
+.o-mne_certificates_grid {
+    margin: 30px 0px 50px 0px;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    gap: 10px;
+    justify-content: center;
+
+    @media screen and (min-width:768px) {
+        gap:10px;
+        margin: 30px 30px 50px 30px;
+    }
+}
+
+.o-mne_certificates_img {
+    display: block;
+    margin: 0px auto;
+
+    @media screen and (min-width:768px){
+        width:140px;
+    }
+}
+
+.o-mne_brands_flex {
+    display: flex;
+    height: 40px;
+    margin: 30px 0px;
+    justify-content: space-between;
+
+    @media screen and (min-width:768px){
+        height: 70px;
+        margin: 30px 30px;
+    }
+}
