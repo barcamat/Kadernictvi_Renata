@@ -11,6 +11,7 @@ module.exports = function(eleventyConfig) {
    // Add a new passthrough file copy for JavaScript files
    eleventyConfig.addPassthroughCopy('js');
 
+
   return {
     // možné formáty šablon
     templateFormats: ["njk", "html", "md", "liquid"],
