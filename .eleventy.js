@@ -11,6 +11,13 @@ module.exports = function(eleventyConfig) {
    // Add a new passthrough file copy for JavaScript files
    eleventyConfig.addPassthroughCopy('js');
 
+
+   // Zkopírovat site.webmanifest do _site/
+   eleventyConfig.addPassthroughCopy("site.webmanifest");
+
+   eleventyConfig.addPassthroughCopy("favicon");
+
+
   return {
     // možné formáty šablon
     templateFormats: ["njk", "html", "md", "liquid"],
