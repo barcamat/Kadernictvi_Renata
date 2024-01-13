@@ -1,0 +1,22 @@
+@use 'variables' as *;
+
+/*****************************************************************
+                  ===SECTION ARTICLE===
+****************************************************************/
+
+.article{
+    margin: 0 20px;
+}
+
+.article__title {
+    color: $fialova;
+    margin-bottom: 5px;
+    // font-size: 24px;
+}
+
+.article__date {
+    // font-size: 14px;
+    margin:0 0 15px 0;
+}
+
+

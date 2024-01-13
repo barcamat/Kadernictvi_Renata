@@ -1,0 +1,25 @@
+---
+layout: layouts/hlavni_sablona.njk  
+---
+
+<div class="conteiner">
+
+    <!-- vloženo header stránky -->
+    {% include 'partials/header.njk' %}
+
+     
+    <!-- vloženo menu stránky -->
+    {% include 'partials/menu.njk' %}
+
+    <main>
+
+        {{ content | safe }}
+
+    </main>
+
+    <!-- vložíme patičku stránky -->
+    {% include 'partials/footer.njk' %}
+
+ </div>
+
+ 

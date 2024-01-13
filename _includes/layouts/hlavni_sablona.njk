@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {# DATA PRO SOCIÁLNÍ SÍTĚ #}
+    <meta property="og:title" content="Kadeřnictví Renata">
+	<meta property="og:description" content="Sebevědomá žena musí zářit.">
+	<meta property="og:type" content="Kadeřnictví">
+	<meta property="og:image" content="https://kadernictvi-renata.netlify.app/images/header/header_img_opengraph.jpg">
+	<meta property="og:url" content="https://kadernictvi-renata.netlify.app/">
+	<meta property="og:locale" content="cs_CZ">
+    {# DATA PRO SOCIÁLNÍ SÍTĚ - KONEC #}
+
+    {# FAVICON #}
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+    {# <div class="conteiner">
+
+       <!-- vloženo header stránky -->
+       {% include 'partials/header.njk' %}
+
+        
+        <!-- vloženo menu stránky -->
+        {% include 'partials/menu.njk' %} #}
+
+        <main>
+
+            {{content | safe}}
+
+         </main>
+
+        {# <!-- vložíme patičku stránky -->
+        {% include 'partials/footer.njk' %} #}
+
+    </div>
+
+<script src="/js/fslightbox.js"></script>
+
+</body>
+</html>     

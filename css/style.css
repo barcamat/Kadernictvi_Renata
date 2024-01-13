@@ -599,7 +599,7 @@ body {
   .gallery_img {
     width: 180px;
     display: block;
-    margin: 0 auto;
+    margin: 10px auto;
   }
 }
 
@@ -662,4 +662,67 @@ body {
     width: 500px;
     flex: 0 0 60%;
   }
+}
+/*****************************************************************
+                  ===SECTION BLOG===
+****************************************************************/
+.blog_article {
+  display: flex;
+  margin: 20px 20px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 1px 10px 1px #d2d2d2;
+  padding: 20px 10px;
+}
+
+.blog_article img {
+  width: 80px;
+}
+
+.blog_article_description {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+}
+
+.blog_article_description-item {
+  margin: 0;
+}
+
+.blog_article_description-title {
+  font-size: 16px;
+  font-size: bold;
+  text-decoration: underline;
+}
+
+.blog_article_description-perex {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.blog_article_description-link {
+  font-size: 14px;
+  text-decoration: none;
+  color: rgb(101, 27, 71);
+}
+
+.blog_article_description-link:hover {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/*****************************************************************
+                  ===SECTION ARTICLE===
+****************************************************************/
+.article {
+  margin: 0 20px;
+}
+
+.article__title {
+  color: rgb(101, 27, 71);
+  margin-bottom: 5px;
+}
+
+.article__date {
+  margin: 0 0 15px 0;
 }/*# sourceMappingURL=style.css.map */

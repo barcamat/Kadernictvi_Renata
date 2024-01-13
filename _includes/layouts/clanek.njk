@@ -1,0 +1,44 @@
+---
+layout: layouts/hlavni_sablona.njk  
+---
+
+<div class="conteiner">
+
+    <!-- vloženo header stránky -->
+    {% include 'partials/header.njk' %}
+
+     
+    <!-- vloženo menu stránky -->
+    {% include 'partials/menu.njk' %}
+
+    <main>
+
+        <article class="article">
+    
+            <h1 class="article__title">{{title}}</h1>
+            
+            <p class="article__date">Publikováno {{ page.date.toLocaleString('cs-CZ') }}</p>
+        
+            <div class="article__content">
+
+                <img class="article__image" src="/images/{{foto}}" alt="{{alt}}">
+        
+                <div class="article__text">
+        
+                    <p class="article__perex">{{perex}}</p>
+        
+                    {{ content | safe }}
+        
+                </div>
+            
+            </div>
+    
+        </article>
+    
+    
+    </main>
+
+    <!-- vložíme patičku stránky -->
+    {% include 'partials/footer.njk' %}
+
+ </div>

@@ -1,0 +1,53 @@
+@use 'variables' as *;
+
+/*****************************************************************
+                  ===SECTION BLOG===
+****************************************************************/
+
+.blog_article {
+    display: flex;
+    margin: 20px 20px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 10px 1px $color-shadow;
+    padding: 20px 10px;
+}
+
+.blog_article img {
+    width: 80px;
+}
+
+.blog_article_description {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+
+.blog_article_description-item {
+    margin:0;
+}
+
+.blog_article_description-title {
+    font-size: 16px;
+    font-size: bold;
+    text-decoration: underline;
+   
+}
+
+.blog_article_description-perex {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.blog_article_description-link{
+    font-size: 14px;
+    text-decoration: none;
+    color:$fialova;
+
+    
+}
+
+.blog_article_description-link:hover{
+    font-weight: bold;
+    text-decoration: underline;
+}

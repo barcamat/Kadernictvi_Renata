@@ -1,0 +1,20 @@
+---
+layout: layouts/stranka.njk  
+title: Blog
+---
+
+<h2 class="sections_headline">BLOG</h2>
+
+{% for prispevek in collections.blog %}
+
+<div class="blog_article">
+    <img src="/images/{{prispevek.data.foto}}">
+
+    <div class="blog_article_description">
+        <p class="blog_article_description-title blog_article_description-item">{{prispevek.data.title}}</p>
+        <p class="blog_article_description-perex blog_article_description-item">{{prispevek.data.perex}}</p>
+        <p class="blog_article_description-item"><a class="blog_article_description-link" href="{{prispevek.url}}">Celý článek</a></p>
+        
+    </div>
+</div>
+{% endfor %}
