@@ -5,71 +5,62 @@
                     ===HLAVNI SABLONA===
 ************************************************************/
 /************===HEADER UP===*************/
-.header_up-line {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 0 0 0;
-}
-
-.header_logo-salon {
-  width: 90px;
-  height: 30px;
-  margin: 10px 0 0 10px;
-}
-@media screen and (min-width: 960px) {
-  .header_logo-salon {
-    width: 150px;
-    height: 50px;
-    margin: 10px 0 0 0px;
-  }
-}
-
-.logo_fb,
-.logo_inst,
-.logo_mail {
-  width: 25px;
-  height: 25px;
-  margin: 10px 0px 0 8px;
-}
-@media screen and (min-width: 960px) {
-  .logo_fb,
-  .logo_inst,
-  .logo_mail {
-    width: 30px;
-    height: 30px;
-  }
-}
-
-.logo_social-sites {
-  margin-right: 10px;
-}
-
 /****************===HEADER NAVIGATION===***********/
+.header_box {
+  background-image: url(../../images/header/header_img.jpg);
+  background-size: 480px auto;
+  background-repeat: no-repeat;
+  padding-bottom: 37px;
+}
+@media screen and (min-width: 768px) {
+  .header_box {
+    background-size: 768px auto;
+    padding-bottom: 132px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .header_box {
+    background-size: 960px auto;
+    padding-bottom: 195px;
+  }
+}
+
 .header_navigation {
   display: flex;
   align-items: center;
-  background-color: rgb(101, 27, 71);
-  height: 35px;
-  width: 450px;
+  justify-content: space-between;
+  background-color: black;
 }
 @media screen and (min-width: 768px) {
   .header_navigation {
-    width: 768px;
-    justify-content: space-between;
+    padding: 5px 0;
+    background-color: rgb(101, 27, 71);
   }
 }
-@media screen and (min-width: 960px) {
-  .header_navigation {
-    width: 960px;
-    height: 50px;
+
+.header_navigation_menu {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .header_navigation_menu {
+    display: block;
+  }
+}
+
+.hamburger-menu {
+  width: 30px;
+  margin-right: 15px;
+}
+@media screen and (min-width: 768px) {
+  .hamburger-menu {
+    display: none;
   }
 }
 
 .header_house-icon {
   width: 20px;
   height: 18px;
-  margin: 8px 5px 0 10px;
+  margin: 8px 5px 0 15px;
 }
 @media screen and (min-width: 960px) {
   .header_house-icon {
@@ -80,66 +71,94 @@
 }
 
 .nav_item {
-  padding: 5px 13px;
+  padding: 3px 6px;
   color: #ececec;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 13px;
 }
 @media screen and (min-width: 768px) {
   .nav_item {
+    margin: 0 10px;
+    padding: 2px 1px;
     font-size: 16px;
   }
 }
 @media screen and (min-width: 960px) {
   .nav_item {
-    padding: 10px 13px;
-    font-size: 20px;
+    margin: 0 10px;
+    padding: 3px 1px;
   }
 }
 
 .nav_item:hover,
 .nav_item:active {
-  background-color: #000000;
   text-decoration: none;
-  padding: 9px 13px;
 }
 @media screen and (min-width: 768px) {
   .nav_item:hover,
   .nav_item:active {
-    padding: 8px 13px;
-  }
-}
-@media screen and (min-width: 960px) {
-  .nav_item:hover,
-  .nav_item:active {
-    padding: 11px 13px 12px 13px;
+    border-bottom: 3px solid #ececec;
   }
 }
 
-@media screen and (min-width: 960px) {
-  .nav_item:nth-child(5) {
+@media screen and (min-width: 768px) {
+  .nav_item:nth-child(6) {
     margin-right: 20px;
   }
-  .nav_item:nth-child(5) :hover {
-    padding-right: 20px;
-  }
 }
-.hamburger-menu {
-  display: none;
+.header_img_box-description {
+  color: #ececec;
+  font-size: 12px;
 }
 
-/*************===HEADER IMAGE===**************/
-.header_img-hair {
-  max-width: 450px;
+.header_img_box-description_salon {
+  position: relative;
+  top: 0px;
+  left: 80px;
 }
 @media screen and (min-width: 768px) {
-  .header_img-hair {
-    max-width: 768px;
+  .header_img_box-description_salon {
+    left: 155px;
   }
 }
 @media screen and (min-width: 960px) {
-  .header_img-hair {
-    max-width: 960px;
+  .header_img_box-description_salon {
+    top: 45px;
+  }
+}
+
+.header_img_box-description_name {
+  position: relative;
+  top: -10px;
+  left: 75px;
+}
+@media screen and (min-width: 768px) {
+  .header_img_box-description_name {
+    top: 15px;
+    left: 150px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .header_img_box-description_name {
+    top: 35px;
+  }
+}
+
+.header_img_box-description_slogan {
+  position: relative;
+  top: -10px;
+  left: 30px;
+  font-size: 12px;
+}
+@media screen and (min-width: 768px) {
+  .header_img_box-description_slogan {
+    top: 40px;
+    left: 100px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .header_img_box-description_slogan {
+    top: 75px;
   }
 }
 
@@ -149,18 +168,39 @@
   justify-content: space-around;
   background-color: rgb(101, 27, 71);
   color: #ececec;
-  padding-bottom: 10px;
+  margin: 0 auto;
 }
 
 .footer_adress_headline {
-  font-size: 12px;
-  text-decoration: underline;
+  font-size: 13px;
   text-transform: uppercase;
   margin: 15px 0 8px 0;
 }
 @media screen and (min-width: 960px) {
   .footer_adress_headline {
     font-size: 13px;
+  }
+}
+
+.footer_adress {
+  border-right: 1px solid #ececec;
+}
+
+.footer_time-of-ordering,
+.footer_adress {
+  flex: 0 0 50%;
+  padding-left: 40px;
+}
+@media screen and (min-width: 768px) {
+  .footer_time-of-ordering,
+  .footer_adress {
+    padding-left: 100px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .footer_time-of-ordering,
+  .footer_adress {
+    padding-left: 130px;
   }
 }
 
@@ -175,6 +215,23 @@
   }
 }
 
+.footer_logo_social-sites {
+  padding: 15px 0 0 0;
+}
+.footer_logo_social-sites::before {
+  content: "";
+  display: block;
+  background-color: #ececec;
+  height: 1px;
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+.footer_logos {
+  width: 25px;
+  margin-left: 5px;
+}
+
 /**************===FOOTER - BLACK SECTION===**************/
 .footer_black-section {
   background-color: black;
@@ -187,7 +244,7 @@
 /*VŠEOBECNÉ NASTAVENÍ*/
 /*****************************************************************
                   === COMMON ITEMS FOR ALL HTMLS ===
-****************************************************************/
+*******************************************************/
 .sections_headline {
   font-size: 15px;
   font-family: "Montserrat", Arial;
@@ -674,9 +731,15 @@ body {
   box-shadow: 1px 1px 10px 1px #d2d2d2;
   padding: 20px 10px;
 }
+@media screen and (min-width: 768px) {
+  .blog_article {
+    margin: 20px 100px;
+  }
+}
 
 .blog_article img {
   width: 80px;
+  flex: 1 1 20%;
 }
 
 .blog_article_description {
@@ -725,4 +788,9 @@ body {
 
 .article__date {
   margin: 0 0 15px 0;
+  font-size: 12px;
+}
+
+.article__image {
+  width: 150px;
 }/*# sourceMappingURL=style.css.map */
